@@ -11,7 +11,7 @@
         <nav class="menu">
         <ul>
             <li><a href="">Home page</a></li>
-            <li><a href="">swimming</a></li>
+            <li><a href="http://127.0.0.1:5500/swimming.html">swimming</a></li>
             <li><a href="">about us</a></li>
         </ul></nav>
 
@@ -41,7 +41,7 @@
 
 
        <article>
-        <p>
+        
             <h3>At the Olympics</h3> 
             <img src="./images/mina-images/dark img.png" alt="an image of sport climbing">
             <p>sport climbing involves three formats : <mark>bouldering</mark>, <mark>speed</mark> <br />
@@ -54,7 +54,14 @@
         
              <details>
                 <summary>Here are some more details:</summary><br />
-                
+                <details>
+                    <summary>climbing experience level:</summary><ol>
+                          <li><mark>Beginner</mark></li>
+                          <li><mark>Intermediate</mark></li>
+                          <li><mark>Advanced</mark></li>
+                          <li><mark>Professional</mark></li>
+                </ol>
+                </details><br />
                 <details>
                     <img src="./images/mina-images/15m high.jpg" alt="a picture of climbing 15m high"><br />
                     <summary>In the lead event:</summary>
@@ -106,22 +113,86 @@
                      will be a <mark>combined</mark> <mark>competition</mark><mark>of</mark> <mark>bouldering</mark> and<mark>lead</mark> <mark>events</mark>, and the second one <br />
                      will only feature a <mark>speed</mark><mark>event</mark>.<br />
                 </details>
-             </details><hr /><hr />
-              
+            </details>
+       </article><hr /><hr />
 
-        
-        
+       <section>
+        <h2>Form</h2> 
+        <form>
+           <label for="name">Enter your name</label>
+           <input type="text" id="name" name="name" required minlength="3" checked />
+           <br /><br />
+
+           <label for="email">Enter your email:</label>
+           <input type="email" id="email" required />
+           <br /><br />
+
+           <label for="tel">Enter your phone number:</label>
+           <input type="tel" id="tel" min="12" required />
+           <br /><br />
+
+           <label for="pass">Password</label>
+           <input type="password" id="pass" name="password" minlength="9" required />
+           <br /><br />
+
+           <label for="Visit-date">Today's date:</label>
+           <input type="date" id="Visit-date" name="Visit-date" value="2024-09-03" />
+           <br /><br />
+
+           <label for="cl">choose your favorite color: </label>
+           <input type="color" id="cl" name="favorite color" value="#e66465" />
+           <br /><br /><br />
+
+           <fieldset>
+               <legend>Indicate your age to help us tailor your experience:</legend>
+                 <input type="radio" id="under18" name="s" checked />
+                 <label for="correct">under 18</label>
+               
+                 <input type="radio" id="18-24" name="s" />
+                 <label for="18-24">18-24 years old</label>
+               
+                 <input type="radio" id="25-34" name="s" />
+                 <label for="25-34"> 25-34 years old </label>
+                 
+                 <input type="radio" id="35-44" name="s" />
+                 <label for="35-44">35-44 years old </label>
+
+                 <input type="radio" id="45-54" name="s" />
+                 <label for="45-54">45-54 years old </label>
+
+                 <input type="radio" id="55-64" name="s" />
+                 <label for="55-64">55-64 years old </label>
+
+                 <input type="radio" id="65 and above" name="s" />
+                 <label for="65 and above">65 years old and above </label>
+
+                 
+               </fieldset><br />
+
+               <fieldset>
+                   <legend></legend>
+                     <input type="checkbox" id="c" name="s" />
+                     <label for="c"></label>
+
+                     <input type="checkbox" id="c" name="s" />
+                     <label for="c"></label>
+                     
+                     <input type="checkbox" id="c" name="s" />
+                     <label for="c"></label>
+                    
+
+                     <input type="checkbox" id="inc" name="s" />
+                     <label for="inc">Elliptical Galaxies</label>
+                     
+
+                     <input type="checkbox" id="inc2" name="s" />
+                     <label for="inc2">Irregular Galaxies</label>
+                     
+                   </fieldset><br />
+        </form>  
+       </section><hr /><hr /><hr />
 
 
-        
-            </p>
-
-
-
-
-
-
-       </article>
     
     </main>
 
